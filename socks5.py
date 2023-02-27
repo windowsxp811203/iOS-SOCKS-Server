@@ -65,8 +65,8 @@ try:
     else:
         print('Warning: could not get WiFi address; assuming %s' % PROXY_HOST)
 
-    if iftypes['cell']:
-        iface = iftypes['cell'][0]
+    if iftypes['en']:
+        iface = iftypes['en'][0]
         print("Will connect to servers over interface %s at %s" %
               (iface.name, iface.addr.address))
         CONNECT_HOST = iface.addr.address
